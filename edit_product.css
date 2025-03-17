@@ -1,0 +1,71 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Buttons */
+button.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button.btn-primary {
+    background-color: red; /* Change the color to red */
+    border: 1px solid darkred; /* Add a dark red border */
+    color: white;
+}
+
+button.btn-primary:hover {
+    background-color: darkred; /* Darker shade on hover */
+}
+
+button.btn-secondary {
+    background-color: #6c757d; /* Darker grey shade */
+    border: 1px solid #495057;
+    color: white;
+}
+
+button.btn-secondary:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+}
+
+/* Form buttons group */
+.form-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    border: 1px solid #ddd; /* Outline for the button group */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Input Fields and Textarea */
+input.form-control, textarea.form-control, select.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input.form-control:focus, textarea.form-control:focus, select.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive Form Adjustments */
+@media (max-width: 768px) {
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center align buttons */
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}

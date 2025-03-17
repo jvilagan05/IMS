@@ -1,0 +1,116 @@
+html, body {
+    background-color: #f8f2de;
+}
+/* Container Styling */
+.container {
+    border: 2px solid #b71c1c; /* Red border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    background-color:#ecdcbf;
+    font-family: "Baskerville Old Face";
+    color: #000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Custom Add New Product button (Red color) */
+.btn-add-product {
+    background-color: #fe0022; /* Dark red background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Custom padding */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure the link behaves like a button */
+    margin-right: 10px; /* Add space between buttons */
+
+}
+
+.btn-add-product:hover {
+    background-color: #d50020; /* Darker red on hover */
+    color: white; /* Keep text white */
+}
+
+/* Custom Back to Dashboard button (Gray color) */
+.btn-back-dashboard {
+    background-color: #f6730b; 
+    color: #ffffff; 
+    padding: 12px 24px; /* Custom padding */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure the link behaves like a button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add space between buttons */
+}
+
+
+.btn-back-dashboard:hover {
+    background-color: #cc470f; /* Darker gray on hover */
+    color: white; /* Keep text white */
+}
+
+/* Custom Export to CSV button */
+.btn-custom {
+    background-color: #1f7d53; 
+    color: white; /* Dark gray text */
+    padding: 10px 20px; /* Custom padding */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: all 0.3s ease; /* Smooth transition */
+    margin-right: 10px; /* Add space between buttons */
+}
+
+.btn-custom:hover {
+    background-color: #255f38; 
+    color: white; /* White text */
+    border-color: #222; /* Darker gray border on hover */
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #C82333;
+    padding: 9px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    background-color: #e7e6e6;
+    background-clip: padding-box;
+}
+
+.btn-add-product, .btn-back-dashboard, .btn-custom {
+    text-align: center;
+}
+
+/* Edit button */
+.btn-warning {
+    background-color: #f6730b; /* Yellow background */
+    color: white; /* White text */
+    padding: 8px 23px; /* Custom padding */
+    border-radius: 12px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it behave like a button */
+    margin-bottom: 10px;
+}
+
+.btn-warning:hover {
+    background-color: #cc470f; /* Darker yellow on hover */
+}
+
+/* Delete button */
+.btn-danger {
+    background-color: #fe0022; /* Red background */
+    color: white; /* White text */
+    padding: 8px 16px; /* Custom padding */
+    border-radius: 12px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it behave like a button */
+}
+
+.btn-danger:hover {
+    background-color: #d50020; /* Darker red on hover */
+}

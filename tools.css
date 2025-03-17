@@ -1,0 +1,507 @@
+/* Body Styling */
+body {
+    font-family: 'Baskerville Old Face';
+    background-color:  #f8f2de !important; /* Change this color */
+    padding: 20px;
+    color: #333;
+}
+/* Container Styling */
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header Styling */
+header {
+    background-color: #dc3545; /* Bootstrap's .bg-danger color */
+    color: white;
+    padding: 20px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for header */
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-warning.view-image {
+    background-color: #dc3545; /* Change this to your preferred color */
+    border-color: #dc3545; /* Match border color */
+    color: #ffffff; /* Text color */
+}
+
+.btn-warning.view-image:hover {
+    background-color: #523033; /* Darker shade for hover effect */
+    border-color: #523033;
+}
+/* Style for Borrow link */
+a[href^="borrow_btn.php"] {
+    display: inline-block;
+    background-color: #C1D8C3; /* Green */
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+a[href^="borrow_btn.php"]:hover {
+    background-color: #6A9C89; /* Darker green on hover */
+    color: black;
+}
+
+/* Style for Return link */
+a[href^="return.php"] {
+    display: inline-block;
+    background-color: #D2665A; /* Red */
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+a[href^="return.php"]:hover {
+    background-color: #B82132; /* Darker red on hover */
+    color: black;
+}
+
+#searchBar {
+    padding: 10px 15px; /* Increases padding inside the input */
+    font-size: 16px; /* Increases font size */
+    width: 200px; /* Makes the input take up the full width of its container */
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    border: 1px solid #C82333;
+    transition: 0.3s ease;
+    background-color: #e7e6e6;
+    background-clip: padding-box;
+}
+
+.page-link {
+
+    background-color: #d8d9da;
+    color: #272829;
+
+}
+
+.page-link:hover {
+
+    background-color: #000;
+    color: white;
+}
+
+/* Style the active page item */
+.pagination .page-item.active .page-link {
+    background-color: #272829; /* Set the background color */
+    border-color: #272829; /* Optional: Change the border color as well to match */
+    color: #fff; /* Optional: Change text color for contrast */
+}
+
+/* Add margin between the select elements */
+#filterID, #filterTool, #filterBrand {
+    width: 140px; /* Optional: Makes each select element take the full width of its container */
+}
+
+/* Optional: Adjust the width of the select elements (if not full width) */
+
+.form-select:last-child {
+    margin-right: 0; /* Remove margin-right on the last select element */
+}
+
+/* Optional: Add some padding and border-radius for styling */
+.form-select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #C82333;
+    transition: 0.3s ease;
+    background-color: #e7e6e6;
+    background-clip: padding-box;
+}
+
+/*Form-return in return.php */
+
+/* Style the form container */
+.form-cardr{
+
+    background-color: #ecdcbf; /* Light background color for the form */
+
+}
+.form-return {
+    background-color: #ecdcbf; /* Light background color for the form */
+    padding: 20px; /* Add padding around the form */
+    border-radius: 8px; /* Optional: Round the corners of the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    max-width: 1000px; /* Optional: Limits the width of the form */
+    margin: 0 auto; /* Centers the form horizontally */
+}
+
+/* Style the form labels */
+.form-return label {
+    font-size: 18px; /* Adjust the font size of labels */
+    font-weight: bold; /* Makes labels bold */
+    margin-bottom: 5px; /* Adds space between label and input field */
+    display: block; /* Makes labels take up a full line */
+    
+}
+
+/* Style the form input fields */
+.form-return input {
+    width: 100%; /* Make the input fields take up full width */
+    padding: 10px; /* Adds padding inside input fields */
+    margin-bottom: 15px; /* Adds space below each input */
+    border: 1px solid #ccc; /* Light border around the input */
+    border-radius: 5px; /* Rounded corners for the inputs */
+    font-size: 16px; /* Adjust the font size inside input fields */
+    background-color: #e7e6e6 ;
+}
+
+/* Button Styling */
+.form-return button {
+    padding: 10px 20px; /* Padding inside the buttons */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Makes the cursor a pointer when hovering over buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    margin-right: 10px; /* Space between the buttons */
+    border: none; /* Removes default button border */
+}
+
+/* Submit button specific style */
+.form-return button[type="submit"] {
+    background-color: #28a745; /* Green background for the submit button */
+    color: white; /* White text */
+}
+
+/* Cancel button specific style */
+.form-return button[type="button"] {
+    background-color: #dc3545; /* Red background for the cancel button */
+    color: white; /* White text */
+}
+
+/* Optional: Add hover effects for the buttons */
+.form-return button:hover {
+    opacity: 0.8; /* Makes the button slightly transparent on hover */
+}
+
+/* Optional: Adjust the input height for consistency */
+.form-return input[type="number"], .form-return input[type="date"], .form-return input[type="text"] {
+    height: 40px; /* Sets a consistent height for input fields */
+}
+
+
+
+
+
+
+
+
+
+
+/*Borrowers.php*/
+/* Form Styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Fields */
+form label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus {
+    border-color: #007bff; /* Focused border color */
+    outline: none;
+}
+
+/* Buttons Styling */
+form button {
+    background-color: #007bff; /* Blue background for submit */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Cancel Button */
+form button[type="button"] {
+    background-color: #dc3545; /* Red background for cancel */
+}
+
+form button[type="button"]:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Spacing between fields */
+form br {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Buttons tools.php */
+.btn-primary {
+    background-color: #fe0022;
+    border: none;
+    padding: 12px;
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+
+.btn-primary:hover {
+    background-color: #d50020;
+
+}
+
+.btn-secondary {
+    background-color: #f6730b !important; 
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    margin-right: 25px;
+    border: none;
+   
+}
+
+.btn-secondary:hover {
+    background-color: #cc470f !important; 
+}
+
+
+.btn-third {
+    background-color: #1f7d53 !important;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    margin-right: 25px;
+    color: white;
+}
+
+.btn-third:hover {
+    background-color: #255f38 !important; /* Darker green on hover */
+    color: white;
+
+}
+
+.btn-fourth {
+
+background-color: #578FCA !important;
+padding: 12px;
+font-size: 16px;
+width: 100%;
+border-radius: 8px;
+transition: 0.3s ease;
+margin-right: 25px;
+color: white;
+
+}
+
+.btn-fourth:hover{
+
+    background-color: #3674B5 !important; /* Darker green on hover */
+    color: white;
+
+}
+
+.btn-fifth {
+    background-color: #f6730b !important; 
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    margin-right: 25px;
+    border: none;
+    color: white;
+   
+}
+
+.btn-fifth:hover {
+    background-color: #cc470f !important; 
+    color: white;
+}
+
+.btn-sixth {
+    background-color: #C39898 !important; 
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    border: none;
+    color: white;
+   
+}
+
+.btn-sixth:hover {
+    background-color: #987070 !important; 
+    color: white;
+}
+
+.btn-seventh {
+
+    background-color: #f6730b !important; 
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    margin-right: 25px;
+    border: none;
+    color: white;
+
+}
+
+.btn-seventh:hover {
+
+    background-color: #cc470f !important; 
+    color: white;
+
+}
+
+.btn-eight {
+
+    background-color: #fe0022 !important; 
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    margin-right: 25px;
+    border: none;
+    color: white;
+
+}
+
+.btn-eight:hover {
+
+    background-color: #d50020 !important; 
+    color: white;
+
+}
+
+
+
+/*borrow_btn.php css */
+
+/* Style for the form container */
+.borrow-tools-form {
+    background-color: #ecdcbf; /* Light background color for the form */
+    padding: 20px; /* Adds padding around the form */
+    border-radius: 8px; /* Optional: Round the corners of the form */
+    max-width: 600px; /* Optional: Limits the width of the form */
+    margin: 0 auto; /* Centers the form horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+/* Style the labels */
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Makes labels take up full width */
+    color: #000000;
+    
+}
+
+/* Style the form input fields */
+.form-input {
+    width: 100%; /* Make the input fields take up full width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #e7e6e6;
+
+}
+
+/* Button Styling */
+.form-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+    font-family: "Baskerville Old Face";
+}
+
+/* Submit button specific style */
+.form-button[type="submit"] {
+    background-color: #1f7d53 !important;    
+    color: white;
+}
+
+.form-button[type="submit"]:hover {
+
+    background-color: #255f38 !important; /* Darker green on hover */
+    color: white;
+
+}
+
+/* Cancel button specific style */
+.form-button[type="button"] {
+    background-color: #fe0022;
+    color: white;
+}
+
+.form-button[type="button"]:hover {
+    background-color: #d50020;
+    color: white;
+}
+
+
+/* Optional: Add hover effects for buttons */
+.form-button:hover {
+    opacity: 0.8; /* Makes the button slightly transparent on hover */
+}
+
+/* Optional: Adjust the height of the input fields for consistency */
+.form-input[type="number"], .form-input[type="date"], .form-input[type="text"] {
+    height: 40px; /* Consistent height for all input fields */
+}
+
+/* Target h2 elements inside a container with the class 'borrow-btn-page' */
+/* Style the h2 with the specific class */
+.borrow-btn-header {
+    color: red;
+}
+

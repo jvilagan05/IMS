@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    background-color: #f8f2de;
+    font-family: "Baskerville Old Face";
+    color: #000000;
+    
+}
+
+/* Cards */
+.card {
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: #ecdcbf;
+}
+
+/* Center and Resize Chart Card */
+.chart-card {
+    width: 1050px; /* Adjust width as needed */
+    margin: 20px auto; /* Centers the card */
+    padding: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Buttons */
+.btn-outline-danger {
+    border-width: 2px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Tables */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Charts */
+canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Pagination */
+.pagination .page-link {
+    color: #dc3545;
+    border-radius: 8px;
+    margin: 0 3px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+/* Recommendations */
+.mt-4 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mt-4 li {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Custom Add New Product button (Red color) */
+.btn-primary {
+    background-color: #fe0022; /* Dark red background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Custom padding */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure the link behaves like a button */
+    margin-right: 10px; /* Add space between buttons */
+    border: none;
+
+}
+
+.btn-primary:hover  {
+    background-color: #d50020; /* Darker red on hover */
+    color: white; /* Keep text white */
+}
+
+/* Custom Back to Dashboard button (Gray color) */
+.btn-secondary {
+    background-color: #1f7d53; 
+    color: #ffffff; 
+    padding: 12px 24px; /* Custom padding */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure the link behaves like a button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 20px; /* Rounded corners */
+    margin-right: 10px; /* Add space between buttons */
+}
+
+
+.btn-secondary:hover {
+    background-color: #255f38; /* Darker gray on hover */
+    color: white; /* Keep text white */
+}

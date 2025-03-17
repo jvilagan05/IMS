@@ -1,0 +1,432 @@
+/* Global Styles or Overall Style of the Body */
+body {    
+    font-family: "Baskerville old face";
+    background-color: #f8f2de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Main Layout to keep sidebar fixed */
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* Header (Company Details sa Dashboard)*/
+.header {
+    text-align: center;
+    padding: 0px;
+    background-color: #f8f2de;
+    border-bottom: 3px solid #dc3545;
+    margin-bottom: 20px;
+}
+
+.header img {
+    max-width: 120px; /* Adjusted logo size */
+    height: auto;
+}
+
+.header h1 {
+    font-size: 30px; /* Reduced for better mobile fit */
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/*DASHBOARD.PHP*/
+/* Dashboard Sidebar Design */
+.sidebar {
+    width: 250px;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #d50020; /* Sidebar color */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: left 0.3s ease-in-out;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Make the inner content scrollable */
+.sidebar-menu {
+    flex-grow: 1;
+    overflow-y: auto; /* Enables scrolling */
+    background-color: #d50020; /* Sidebar menu color */
+
+}
+
+
+.sidebar.active {
+    left: 0; /* When active, it slides in */
+}
+
+/* Hide sidebar (move it off-screen) maaalis sa display kapag hinide yung sidebar */
+.sidebar.hidden {
+    left: -250px;
+}
+
+.sidebar.hidden + .content {
+    margin-left: 0; /* Move content to the left */
+    width: 100%; /* Expand to full width */
+}
+
+.sidebar .nav {
+    list-style-type: none;
+    padding: 0;
+    background-color: #d50020;
+}
+
+/* sidebar item*/
+.sidebar .nav-item {
+    text-align: center;
+    padding: 20px 25px;
+}
+
+.sidebar .nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+
+/* color kapag hinover sa mga words sa sidebar*/
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background: #fe0022;
+}
+
+/*EJMT Trading title sa sidebar*/
+.sidebar h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Garamond;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar ul li {
+    padding: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #c82333;
+}
+
+/* Sidebar Toggle Button */
+.toggle-btn {
+    background-color: #d50020;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.toggle-btn:hover {
+    background-color: #c82333;
+}
+
+.small-toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: -50px; /* Hide when sidebar is open */
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.small-toggle-btn.show {
+    left: 15px; /* Show when sidebar is hidden */
+}
+
+.toggle-btn:hover {
+    background-color: #c82333;
+}
+
+.pagination-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+}
+
+.pagination .active .page-link {
+    background-color: #d9534f; /* Adjust to your theme */
+    color: white;
+    border: 1px solid #d9534f;
+}
+
+/* Alerts */
+.alert {
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Table */
+.table-responsive {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.table thead {
+    background: #d9534f;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+/* Adjust content width when sidebar is hidden (all items maliban sa sidebar - dashboard.php) */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+    background: #f8f2de; /* Ensure it matches sidebar */
+}
+
+
+.content.full-width {
+    margin-left: 0;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 75%; /* Adjusted width for better mobile fit */
+        left: -100%;
+        transition: 0.3s;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 100%;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* Responsive Table (Dashboard) */
+.table-responsive {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.table thead th {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table tbody td {
+    font-size: 18px;
+}
+
+/* Alert */
+.alert {
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Center container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f2de;
+}
+
+/* FORM CONTAINER OF Add_product.php FORM CONTAINER OF Add_product.php FORM CONTAINER OF Add_product.php  */
+.add-product-container {
+    max-width: 850px;
+    width: 100%;
+    background: #ecdcbf;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    outline: 2px solid #b71c1c;  /* Add a red outline */
+    outline-offset: 1px;  /* Optional: add space between outline and container */
+   
+}
+
+/* Header add_product.php */
+.add-product-header h2 {
+    color: #b71c1c;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling add_product.php */
+.add-product-form .form-group label {
+    font-weight: 500;
+    color: #000;
+}
+
+.add-product-form .form-control {
+    border-radius: 8px;
+    border: 1px solid #C82333;
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    background-color: #e7e6e6;
+    background-clip: padding-box;
+    
+}
+
+.add-product-form .form-control:focus {
+    border-color: #b71c1c;
+    box-shadow: 0 0 6px rgba(183, 28, 28, 0.3);
+}
+
+/* Buttons add_product.php */
+.add-product-form .btn-primary {
+    background-color: #fe0022;
+    border: none;
+    padding: 12px;
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+
+/* add_product.php hover */
+.add-product-form .btn-primary:hover {
+    background-color: #d50020;
+}
+
+/* Back to Dashboard Button add_product.php */
+.add-product-form .btn-secondary {
+    background-color: #f6730b !important; /* Green */
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+   
+}
+
+.add-product-form .btn-secondary:hover {
+    background-color: #cc470f !important; /* Darker green on hover */
+}
+
+/* Responsive Design add_product.php */
+@media (max-width: 768px) {
+    .add-product-container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/*EJMT FOOTER ON DASHBOARD*/
+.ejmt-footer {
+    background-color: #000000; /* Red background */
+    color: white;
+    text-align: center;
+    padding: 0px; /* Thinnest possible */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-warning {
+    background-color: #f6730b !important;
+    color: white !important;
+    border-color: #cc470f !important;
+}
+
+.alert-warning strong {
+    color: white !important;
+}

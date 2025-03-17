@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+html, body {
+    background-color: #f8f2de;
+    color: #4a4a4a;
+}
+
+/* Container for the Page */
+.container {
+    background-color: #ecdcbf;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 28px;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Search, Filter, and Sort Section */
+.d-flex {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    
+}
+
+#search {
+    flex: 1;
+    margin-right: 15px;
+}
+
+#filterColumn, #sortOrder {
+    width: 180px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #f6730b !important;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+
+}
+
+.btn-primary:hover {
+    background-color: #cc470f;
+    color: #ffffff;
+}
+
+/* No Results Found */
+.text-center {
+    font-size: 16px;
+    color: #777777;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    #search, #filterColumn, #sortOrder {
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
